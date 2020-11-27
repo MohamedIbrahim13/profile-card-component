@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+  height: 100vh;
+  background-color: #19a2ae;
+  letter-spacing: 1.2px;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.top-bg {
+  transform: translate(-84%, -80%);
+  position: relative;
+}
+
+.bottom-bg {
+  position: relative;
+  transform: translate(60%, -95%);
+}
+
+.container {
+  width: 337.5px;
+  margin: 0 auto;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 20px;
+}
+
+.card {
+  position: relative;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile-pic {
+  position: absolute;
+  border: 4px solid white;
+  border-radius: 50%;
+  top: calc(135px - (75px /2));
+  right: calc((337.5px - 75px) / 2);
+  height: 75px;
+  width: 75px;
+  z-index: 99;
+}
+
+.card-body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  height: calc(350px - 135px);
+  background: white;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card-body .top {
+  margin-top: calc((75px / 2) + 30px);
+  margin-bottom: 25px;
+}
+.card-body .top p:first-child {
+  font-weight: 700;
+  color: #2d3248;
+}
+.card-body .top p:first-child span {
+  font-weight: 400;
+  color: #969696;
+}
+.card-body .top p:last-child {
+  margin-top: 10px;
+  font-weight: 400;
+  color: #969696;
+  font-size: 0.85em;
+}
+.card-body .bottom {
+  border-top: 0.1px solid #969696;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 16.875px;
+}
+.card-body .counter {
+  margin-top: 25px;
+}
+.card-body .counter span:first-child {
+  font-weight: 700;
+  color: #2d3248;
+}
+.card-body .counter span:last-child {
+  font-weight: 400;
+  color: #969696;
+  font-size: 0.75em;
+}
